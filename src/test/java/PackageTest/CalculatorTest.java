@@ -1,18 +1,21 @@
+//Pakiet zawierający klasę testową dla kalkulatora
 package PackageTest;
 
+//Import poprzednich klas
 import Package1.Calculator;
 import Package2.InputValidator;
 import Package3.MathUtil;
 
 import java.util.Scanner;
 
-
+//Klasa CalculatorTest zawiera metodę main do testowania funkcji kalkulatora
 public class CalculatorTest {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Calculator calculator = new Calculator();
         InputValidator inputValidator = new InputValidator();
 
+        //Wyświetlanie wyników podanych operacji matematycznych dla wprowadzonych liczb
         System.out.print("Wpisz liczbę nr 1: ");
         int a = scanner.nextInt();
 
